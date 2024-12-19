@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
-
+import { ResourceComponent } from './component/resource/resource.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { VerifyEmailComponent } from './component/verify-email/verify-email.comp
     RegisterComponent,
     DashboardComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    ResourceComponent
   ],
   imports: [
     BrowserModule,

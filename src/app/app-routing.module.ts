@@ -6,6 +6,10 @@ import { RegisterComponent } from './component/register/register.component';
 import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 
+import { AboutComponent } from './component/about/about.component';
+import { ResourceComponent } from './component/resource/resource.component';
+import { MapComponent } from './component/map/map.component';
+import { VolunteerComponent } from './component/volunteer/volunteer.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'login', pathMatch:'full'},
@@ -13,8 +17,11 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'verify-email', component: VerifyEmailComponent},
-  {path: 'forgot-password', component: ForgotPasswordComponent}
-
+  {path: 'forgot-password', component: ForgotPasswordComponent},
+  { path: 'about', component: AboutComponent },
+  { path: 'resource', component: ResourceComponent },
+  { path: 'map', component: MapComponent },
+  { path: 'volunteer', component: VolunteerComponent },
 ];
 
 @NgModule({
