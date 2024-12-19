@@ -1,4 +1,4 @@
-
+<!-- 
 
 <nav>
   <ul>
@@ -11,14 +11,6 @@
 
 <router-outlet></router-outlet>
 
-  
-
-
-
-
-
-
-
   <div class="logout-container">
     <button
       class="logout-button"
@@ -29,4 +21,101 @@
     </button>
   </div>
   
+   -->
+
+   <nav class="navbar">
+    <ul>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/resource">Resource</a></li>
+      <li><a routerLink="/map">Alert</a></li>
+      <li><a routerLink="/volunteer">Volunteer</a></li>
+      <li><a routerLink="/preppoint">Prepoint</a></li>
+    </ul>
+  </nav>
+  
+  <router-outlet></router-outlet>
+  <h1></h1>
+  <header class="hero">
+    <div class="hero-content">
+      <h1 style="color: black;">Disaster Management System</h1>
+      <p style="color: black;">Empowering communities with tools and resources to navigate through disasters and build resilience.</p>
+      <button class="cta-button" routerLink="/volunteer">Become a Volunteer</button>
+      <button class="cta-button secondary" routerLink="/resource">Find Resources</button>
+    </div>
+  </header>
+  
+  <section class="info-section">
+    <div class="info-card">
+      <h2>What We Do</h2>
+      <p>Our mission is to provide timely information, disaster response strategies, and essential resources to support affected communities.</p>
+      <ul>
+        <li>Real-time alerts and updates.</li>
+        <li>Comprehensive disaster maps.</li>
+        <li>Access to emergency resources.</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h2>How You Can Help</h2>
+      <p>Your support matters. Join us as a volunteer, donate resources, or share vital information to help save lives.</p>
+      <ul>
+        <li>Sign up as a volunteer responder.</li>
+        <li>Donate essentials to those in need.</li>
+        <li>Share safety guidelines in your community.</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h2>Stay Prepared</h2>
+      <p>Disasters can strike anytime. Be prepared with our actionable guides and checklists tailored for different scenarios.</p>
+      <ul>
+        <li>Emergency kits and evacuation plans.</li>
+        <li>First aid training resources.</li>
+        <li>Safety measures for specific disasters (floods, earthquakes, etc.).</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="disaster-guide-section">
+    <h2>How to Deal in Disaster Situations</h2>
+    <p>Equip yourself with the knowledge and tools to stay safe and assist others during emergencies. Follow these essential steps:</p>
+    <div class="guidelines-container">
+      <ul>
+        <li><strong>Stay Calm:</strong> Keep a clear mind and avoid panic. Assess the situation before taking action.</li>
+        <li><strong>Follow Alerts:</strong> Stay informed through official alerts and updates from local authorities.</li>
+        <li><strong>Evacuation Plans:</strong> Familiarize yourself with evacuation routes and safe zones in your area.</li>
+        <li><strong>Emergency Kit:</strong> Prepare a kit with essentials like water, food, first-aid, flashlight, and important documents.</li>
+        <li><strong>Help Others:</strong> Assist children, elderly, and individuals with disabilities in reaching safe locations.</li>
+        <li><strong>Stay Connected:</strong> Keep your phone charged and have backup communication devices available.</li>
+        <li><strong>Report:</strong> Notify authorities about injuries, damages, or hazards in your area.</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="volunteer-section">
+    <h2>Join Our Volunteer Network</h2>
+    <p>Become a part of a dedicated team working towards disaster relief and recovery. Your efforts can make a real difference.</p>
+    <button class="cta-button" routerLink="/Register">Sign Up Now</button>
+  </section>
+  <h1></h1>
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, reach out to us:</p>
+      <ul>
+        <li>Email: support&#64;disasterhelp.org</li>
+
+        <li>Phone: +1-800-123-4567</li>
+        <li>Address: 123 Disaster Relief Avenue, Resilience City</li>
+      </ul>
+    </div>
+    <div class="social-media">
+      <h2>Follow Us</h2>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+ 
   

@@ -1,189 +1,216 @@
-nav {
-  background-color: #333;
-  padding: 10px;
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-nav ul {
-  list-style-type: none;
+/* Navbar */
+.navbar {
+  background-color: #0f1113; /* Primary background color */
+  color: white;
+  padding: 10px 20px;
+  width: 100%; /* Full-width bar */
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove bullet points */
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px;
+  justify-content: space-around; /* Equal spacing between items */
+  align-items: center; /* Vertically align items */
 }
 
-nav ul li {
+.navbar ul li {
   display: inline;
 }
 
-nav ul li a {
-  text-decoration: none;
+.navbar ul li a {
   color: white;
-  font-weight: bold;
-  padding: 5px 10px;
+  text-decoration: none; /* Remove underline */
+  padding: 8px 15px;
   border-radius: 5px;
+  font-weight: bold; /* Emphasize text */
 }
 
-nav ul li a:hover {
-  background-color: #575757;
+.navbar ul li a:hover {
+  background-color: #003399; /* Highlight color on hover */
 }
 
-html, body {
-    height: 100%; /* Ensure the body takes up the full height */
-    margin: 0; 
-    /* Remove default margin */
-    overflow: hidden;
-  }
-  
-  .parent-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh;
-     /* Full viewport height */
-    padding-bottom: 1000px;
-  }
-  
-  .chat-card {
-    /* width: 300px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;  */
-    position: fixed;        /* Fix the chat card's position */
-  top: 50%;              /* Center vertically */
-  left: 50%;             /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust position to perfectly center */
-  width: 300px;          /* Set width of the chat card */
-  background-color: #fff;
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0044cc, #28a745); /* Gradient background */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Large heading */
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Other styles remain unchanged */
-  .chat-header {
-    padding: 10px;
-    background-color: rgb(0, 255, 200);
-    display: flex;
+  margin: 5px;
+}
+
+.cta-button.secondary {
+  background-color: #ffc107; /* Yellow background */
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+/* Info Section */
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.info-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 30%; /* Set width for each card */
+  text-align: center;
+}
+
+.info-card h2 {
+  color: #0044cc;
+  margin-bottom: 15px;
+}
+
+/* Map Section */
+.map-section {
+  background-color: #e9ecef;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.map-section h2 {
+  margin-bottom: 20px;
+  color: #0044cc;
+}
+
+.map-container {
+  height: 400px; /* Set height for map container */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+/* Volunteer Section */
+.volunteer-section {
+  background: linear-gradient(to right, #0044cc, #28a745);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.volunteer-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.volunteer-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.footer h2 {
+  color: #ffc107; /* Yellow highlight */
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media ul {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media ul li a {
+  color: #ffc107;
+  font-size: 1.5rem; /* Larger icons */
+}
+
+/* Logout Button */
+.logout-container {
+  position: absolute; /* Position at top-right corner */
+  top: 10px;
+  right: 10px;
+}
+
+.logout-button {
+  background-color: #dc3545; /* Red button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column; /* Stack cards vertically */
     align-items: center;
-    color: black;
-  }
-  
-  .chat-header .h2 {
-    font-size: 16px;
-    color: #bd1414;
-  }
-  
-  .chat-body {
-    padding: 20px;
-    max-height: 200px; /* Set a maximum height */
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Hide horizontal scrolling */
-  }
-  
-  .message {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .incoming {
-    background-color: #e1e1e1;
-  }
-  
-  .outgoing {
-    background-color: #f2f2f2;
-    text-align: right;
-  }
-  
-  .message p {
-    font-size: 14px;
-    color: #333;
-    margin: 0;
-  }
-  
-  .chat-footer {
-    padding: 10px;
-    background-color: #f2f2f2;
-    display: flex;
-  }
-  
-  .chat-footer input[type="text"] {
-    flex-grow: 1;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-  }
-  
-  .chat-footer button {
-    padding: 5px 10px;
-    border: none;
-    background-color: #4285f4;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .chat-footer button:hover {
-    background-color: #0f9d58;
-  }
-  
-  @keyframes chatAnimation {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .chat-card .message {
-    animation: chatAnimation 0.3s ease-in-out;
-    animation-fill-mode: both;
-    animation-delay: 0.1s;
-  }
-  
-  .chat-card .message:nth-child(even) {
-    animation-delay: 0.2s;
-  }
-  
-  .chat-card .message:nth-child(odd) {
-    animation-delay: 0.3s;
-  }
-  
-  .loading-spinner {
-    text-align: center;
-    color: #4285f4; /* Customize the color */
-    font-weight: bold;
-    margin-top: 10px;
   }
 
-
-
-
-
-
-  .logout-container {
-    position: absolute; /* Position it absolutely */
-    top: 10px; /* Adjust the distance from the top */
-    right: 10px; /* Adjust the distance from the right */
+  .info-card {
+    width: 90%; /* Full-width cards on smaller screens */
+    margin-bottom: 20px;
   }
-  
-  .logout-button {
-    background-color: #4285f4; /* Button color */
-    color: white; /* Text color */
-    font-weight: bold; /* Text weight */
-    padding: 6px 12px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
+
+  .navbar ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 10px;
   }
-  
-  .logout-button:hover {
-    background-color: #0f9d58; /* Color change on hover */
-  }
-  
+}

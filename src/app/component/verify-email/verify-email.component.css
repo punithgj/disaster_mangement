@@ -190,7 +190,7 @@
     width: calc(100% - 10px); /* Adjust width for bg */
     height: calc(100% - 10px); /* Adjust height for bg */
     z-index: 2;
-    background: rgba(27, 20, 20, 0.95);
+    background: rgba(187, 170, 170, 0.95);
     backdrop-filter: blur(24px);
     border-radius: 10px;
     overflow: hidden;

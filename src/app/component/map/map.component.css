@@ -1,0 +1,7 @@
+#map {
+    height: 400px; /* Fixed height */
+    width: 600px; /* Fixed width */
+    margin: 0 auto; /* Center horizontally */
+    border: 1px solid #ccc; /* Optional border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional styling */
+  }

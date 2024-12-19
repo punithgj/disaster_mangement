@@ -1,0 +1,116 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-section {
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .about-hero {
+    background: linear-gradient(to right, #0044cc, #28a745);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-hero p {
+    font-size: 1.5rem;
+  }
+  
+  /* Content Sections */
+  .mission-section,
+  .vision-section,
+  .core-values,
+  .team-section,
+  .stats-section {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .mission-section h2,
+  .vision-section h2,
+  .core-values h2,
+  .team-section h2,
+  .stats-section h2 {
+    color: #0044cc;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Core Values */
+  .core-values ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .core-values ul li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .core-values ul li strong {
+    color: #28a745;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .stat {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .stat h3 {
+    color: #0044cc;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stats-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat {
+      width: 90%;
+    }
+  }
+  

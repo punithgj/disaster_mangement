@@ -23,7 +23,8 @@ import { VolunteerComponent } from './component/volunteer/volunteer.component';
 import { MapComponent } from './component/map/map.component';
 // Services
 import { RealtimeDatabaseService } from './realtime-database.service';
-import { HttpClient } from '@angular/common/http';
+import { PreppointComponent } from './component/preppoint/preppoint.component';
+
 
 @NgModule({
   declarations: [
@@ -36,16 +37,19 @@ import { HttpClient } from '@angular/common/http';
     ResourceComponent,
     VolunteerComponent,
     MapComponent ,
+    PreppointComponent
     // Add VolunteerComponent
   ],
   imports: [
+    BrowserModule,
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase), // Firebase initialization
     AngularFireAuthModule, // Firebase Auth
     AngularFireDatabaseModule, // Firebase Realtime Database
     FormsModule, // For template-driven forms
-    ReactiveFormsModule ,
+    ReactiveFormsModule 
+    
     // For reactive forms
   ],
   providers: [

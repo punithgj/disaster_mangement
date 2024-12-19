@@ -46,3 +46,24 @@ button:disabled {
     margin: 0;
     color: #28a745;
 }
+/* Search Section */
+/* Search Section */
+.search-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-section input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-section input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
