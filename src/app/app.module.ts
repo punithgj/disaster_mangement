@@ -20,9 +20,10 @@ import { ForgotPasswordComponent } from './component/forgot-password/forgot-pass
 import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
 import { ResourceComponent } from './component/resource/resource.component';
 import { VolunteerComponent } from './component/volunteer/volunteer.component';
-
+import { MapComponent } from './component/map/map.component';
 // Services
 import { RealtimeDatabaseService } from './realtime-database.service';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { RealtimeDatabaseService } from './realtime-database.service';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     ResourceComponent,
-    VolunteerComponent // Add VolunteerComponent
+    VolunteerComponent,
+    MapComponent ,
+    // Add VolunteerComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { RealtimeDatabaseService } from './realtime-database.service';
     AngularFireAuthModule, // Firebase Auth
     AngularFireDatabaseModule, // Firebase Realtime Database
     FormsModule, // For template-driven forms
-    ReactiveFormsModule // For reactive forms
+    ReactiveFormsModule ,
+    // For reactive forms
   ],
   providers: [
     RealtimeDatabaseService, // Add RealtimeDatabaseService

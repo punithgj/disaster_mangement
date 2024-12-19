@@ -22,6 +22,7 @@ const routes: Routes = [
   { path: 'resource', component: ResourceComponent },
   { path: 'map', component: MapComponent },
   { path: 'volunteer', component: VolunteerComponent },
+  
 ];
 
 @NgModule({

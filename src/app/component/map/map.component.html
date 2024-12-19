@@ -1,1 +1,12 @@
-<p>map works!</p>
+<div class="map-container">
+    <h1>Weather Disaster Alert System</h1>
+  
+    <label for="city">Enter City:</label>
+    <input type="text" [(ngModel)]="city" placeholder="Enter city name" id="city" />
+    <button (click)="checkWeather()">Check Weather</button>
+  
+    <div class="alert" *ngIf="alertMessage" style="margin-top: 20px; color: red;">
+      {{ alertMessage }}
+    </div>
+  </div>
+  
