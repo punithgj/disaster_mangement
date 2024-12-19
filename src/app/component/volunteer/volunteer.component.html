@@ -1,45 +1,7 @@
 <!-- src/app/component/volunteer/volunteer.component.html -->
 <div class="volunteer-page-container">
-    <!-- Registration Form -->
-    <div class="registration-section">
-        <h2>Volunteer Registration</h2>
-        <form [formGroup]="volunteerForm" (ngSubmit)="onSubmit()">
-            <div>
-                <label for="name">Name:</label>
-                <input id="name" formControlName="name" required />
-            </div>
-
-            <div>
-                <label for="number">Phone Number:</label>
-                <input id="number" formControlName="number" required />
-            </div>
-
-            <div>
-                <label for="email">Email:</label>
-                <input id="email" formControlName="email" type="email" required />
-            </div>
-
-            <div>
-                <label for="address">Address:</label>
-                <input id="address" formControlName="address" required />
-            </div>
-
-            <div>
-                <label for="capabilities">What You Can Do:</label>
-                <textarea id="capabilities" formControlName="capabilities" required></textarea>
-            </div>
-
-            <div>
-                <label for="tagline">Tagline:</label>
-                <input id="tagline" formControlName="tagline" required />
-            </div>
-
-            <button type="submit" [disabled]="!volunteerForm.valid">Register</button>
-        </form>
-    </div>
-
-    <!-- Volunteer List -->
-    <div class="list-section">
+    <!-- Registered Volunteers Section -->
+    <div class="registered-section">
         <h2>Registered Volunteers</h2>
         <div *ngIf="volunteers | async as volunteerList; else loading">
             <div *ngFor="let volunteer of volunteerList" class="volunteer-card">
@@ -55,5 +17,49 @@
         <ng-template #loading>
             <p>Loading volunteers...</p>
         </ng-template>
+    </div>
+
+    <!-- Register to Volunteer Section -->
+    <div class="register-section">
+        <button (click)="toggleFormVisibility()">
+            {{ isFormOpen ? 'Close Registration Form' : 'Register as Volunteer' }}
+        </button>
+        
+        <div *ngIf="isFormOpen" class="registration-section">
+            <h2>Volunteer Registration</h2>
+            <form [formGroup]="volunteerForm" (ngSubmit)="onSubmit()">
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" formControlName="name" required />
+                </div>
+
+                <div>
+                    <label for="number">Phone Number:</label>
+                    <input id="number" formControlName="number" required />
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" formControlName="email" type="email" required />
+                </div>
+
+                <div>
+                    <label for="address">Address:</label>
+                    <input id="address" formControlName="address" required />
+                </div>
+
+                <div>
+                    <label for="capabilities">What You Can Do:</label>
+                    <textarea id="capabilities" formControlName="capabilities" required></textarea>
+                </div>
+
+                <div>
+                    <label for="tagline">Tagline:</label>
+                    <input id="tagline" formControlName="tagline" required />
+                </div>
+
+                <button type="submit" [disabled]="!volunteerForm.valid">Register</button>
+            </form>
+        </div>
     </div>
 </div>

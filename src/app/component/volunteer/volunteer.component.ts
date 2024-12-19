@@ -1,4 +1,3 @@
-// src/app/component/volunteer/volunteer.component.ts
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
@@ -12,11 +11,9 @@ import { RealtimeDatabaseService, Volunteer } from '../../realtime-database.serv
 export class VolunteerComponent implements OnInit {
   volunteerForm!: FormGroup;
   volunteers!: Observable<Volunteer[]>;
+  isFormOpen: boolean = false; // Controls form visibility
 
-  constructor(
-    private fb: FormBuilder,
-    private rtdbService: RealtimeDatabaseService
-  ) {}
+  constructor(private fb: FormBuilder, private rtdbService: RealtimeDatabaseService) {}
 
   ngOnInit(): void {
     this.volunteerForm = this.fb.group({
@@ -38,11 +35,16 @@ export class VolunteerComponent implements OnInit {
         .addVolunteer(volunteerData)
         .then(() => {
           alert('Volunteer successfully registered!');
-          this.volunteerForm.reset();
+          this.volunteerForm.reset(); // Reset form
+          this.isFormOpen = false; // Close the form
         })
         .catch((error: any) => {
           console.error('Error registering volunteer:', error);
         });
     }
+  }
+
+  toggleFormVisibility(): void {
+    this.isFormOpen = !this.isFormOpen;
   }
 }
