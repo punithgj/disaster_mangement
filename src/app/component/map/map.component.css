@@ -1,7 +1,58 @@
 #map {
-    height: 400px; /* Fixed height */
-    width: 600px; /* Fixed width */
-    margin: 0 auto; /* Center horizontally */
-    border: 1px solid #ccc; /* Optional border */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional styling */
+    height: 500px; /* Set a fixed height for the map */
+    width: 100%; /* Make it responsive within the container */
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the map horizontally */
+    border: 2px solid #ccc; /* Add a border for the map */
+    border-radius: 8px; /* Add rounded corners */
+    overflow: hidden; /* Prevent content from overflowing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   }
+  
+  .map-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .input-section {
+    margin-bottom: 20px;
+  }
+  
+  .input-section label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .input-section input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .input-section button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .input-section button:hover {
+    background-color: #218838;
+  }
+  
+  .alert-message {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffcccc;
+    color: #cc0000;
+    font-weight: bold;
+    border: 1px solid #cc0000;
+    border-radius: 5px;
+  }
+  

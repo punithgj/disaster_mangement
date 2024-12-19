@@ -1,31 +1,22 @@
-<!-- <div class="map-container">
-    <h1>Weather Disaster Alert System</h1>
+<div class="map-container">
+    <h1>Weather and Disaster Alert</h1>
   
-    <label for="city">Enter City:</label>
-    <input type="text" [(ngModel)]="city" placeholder="Enter city name" id="city" />
-    <button (click)="checkWeather()">Check Weather</button>
-  
-    <div class="alert" *ngIf="alertMessage" style="margin-top: 20px; color: red;">
-      {{ alertMessage }}
+    <div class="input-section">
+      <label for="city">Enter City:</label>
+      <input
+        id="city"
+        [(ngModel)]="city"
+        type="text"
+        placeholder="Enter city name"
+      />
+      <button (click)="checkWeather()">Check Weather</button>
     </div>
-  </div>
-  <div class="map-container">
-    <div id="map"></div>
-    <div id="map"></div>
-  </div>
-   -->
-   <div class="map-container">
-    <h1>Weather Disaster Alert System</h1>
   
-    <label for="city">Enter City:</label>
-    <input type="text" [(ngModel)]="city" placeholder="Enter city name" id="city" />
-    <button (click)="checkWeather()">Check Weather</button>
-  
-    <div class="alert" *ngIf="alertMessage" style="margin-top: 20px; color: red;">
+    <div *ngIf="alertMessage" class="alert-message">
       {{ alertMessage }}
     </div>
   
-    <!-- Map Box -->
+    <!-- Map -->
     <div id="map"></div>
   </div>
   

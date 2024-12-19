@@ -97,14 +97,9 @@ export class VolunteerComponent implements OnInit {
 
     filterVolunteers(): void {
         const term = this.searchTerm.toLowerCase();
-        this.filteredVolunteers = this.volunteers.filter(volunteer => {
-            return (
-                volunteer.name.toLowerCase().includes(term) ||
-                volunteer.address.toLowerCase().includes(term) ||
-                volunteer.email.toLowerCase().includes(term) ||
-                volunteer.capabilities.toLowerCase().includes(term) ||
-                volunteer.tagline.toLowerCase().includes(term)
-            );
-        });
+        this.filteredVolunteers = this.volunteers.filter(volunteer =>
+            volunteer.name.toLowerCase().includes(term) || volunteer.capabilities.toLowerCase().includes(term)
+        );
     }
 }
+
