@@ -1,6 +1,167 @@
-<div style="color: white; background-color: gray; font-size: 20px;">
-    <p>resource works!</p>
-    <h1>hello</h1>
-    <p>sadjfgkjrg sdgrjnsg rgor</p>
-  </div>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .disaster-section {
+            background-color: #fff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .disaster-section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .disaster-section p {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .video-container {
+            position: relative;
+            max-width: 560px; /* Reduced maximum width for smaller videos */
+            margin: 0 auto; /* Center the video */
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        @media (max-width: 768px) {
+            .disaster-section {
+                padding: 15px;
+            }
+            .video-container {
+                max-width: 100%; /* Allow full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hurricane Section -->
+        <div class="disaster-section" id="hurricane">
+            <h2>Hurricanes</h2>
+            <p>
+                Hurricanes are powerful tropical storms that can cause widespread damage through high winds, heavy rainfall, and storm surges. They can lead to severe flooding, infrastructure destruction, and loss of life. Proper preparation, including securing property and having evacuation plans, is crucial to minimize their impact.
+            </p>
+            <div class="video-container">
+                <!-- Corrected Embed URL -->
+                <iframe 
+                    src="https://www.youtube.com/embed/CgLMOq3-mn4" 
+                    title="Hurricane Preparedness" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Earthquake Section -->
+        <div class="disaster-section" id="earthquake">
+            <h2>Earthquakes</h2>
+            <p>
+                Earthquakes result from the sudden release of energy in the Earth's crust, causing ground shaking and potential destruction. They can trigger landslides, tsunamis, and infrastructure collapse. Understanding safety measures, such as "Drop, Cover, and Hold On," can save lives during such events.
+            </p>
+            <div class="video-container">
+                <!-- Corrected Embed URL -->
+                <iframe 
+                    src="https://www.youtube.com/embed/r5EbbrVXoQw" 
+                    title="Earthquake Safety Tips" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Flood Section -->
+        <div class="disaster-section" id="flood">
+            <h2>Floods</h2>
+            <p>
+                Floods can occur due to heavy rainfall, river overflow, dam failures, or rapid snowmelt, leading to property damage and loss of life. Effective preparedness includes early warning systems, evacuation plans, and securing important documents and valuables.
+            </p>
+            <div class="video-container">
+                <!-- Corrected Embed URL -->
+                <iframe 
+                    src="https://www.youtube.com/embed/rV1iqRD9EKY" 
+                    title="Flood Preparedness" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Wildfire Section -->
+        <div class="disaster-section" id="wildfire">
+            <h2>Wildfires</h2>
+            <p>
+                Wildfires are uncontrolled fires that spread rapidly, especially in dry and windy conditions. They can devastate large areas of forest, homes, and wildlife habitats. Community awareness, proper land management, and having evacuation routes are key to preventing and controlling wildfires.
+            </p>
+            <div class="video-container">
+                <!-- Corrected Embed URL -->
+                <iframe 
+                    src="https://www.youtube.com/embed/ypbPzX5eQss" 
+                    title="Wildfire Safety" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Tornado Section -->
+        <div class="disaster-section" id="tornado">
+            <h2>Tornadoes</h2>
+            <p>
+                Tornadoes are violently rotating columns of air that extend from thunderstorms to the ground. They can cause significant destruction with their high wind speeds. Quick action, knowing safe shelters, and having a reliable warning system can greatly reduce the risk of injury during a tornado.
+            </p>
+            <div class="video-container">
+                <!-- Corrected Embed URL -->
+                <iframe 
+                    src="https://www.youtube.com/embed/TqZ3M7xh8jM" 
+                    title="Tornado Preparedness" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Tsunami Section -->
+        <div class="disaster-section" id="tsunami">
+            <h2>Tsunamis</h2>
+            <p>
+                Tsunamis are large ocean waves typically caused by underwater earthquakes, volcanic eruptions, or landslides. They can travel at high speeds and cause catastrophic flooding when they reach coastal areas. Early detection systems and evacuation plans are essential to protect coastal communities.
+            </p>
+            <div class="video-container">
+                <!-- Corrected Embed URL -->
+                <iframe 
+                    src="https://www.youtube.com/embed/PSMXZPjJwAw" 
+                    title="Tsunami Warning Systems" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

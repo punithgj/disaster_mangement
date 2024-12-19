@@ -22,6 +22,8 @@ const routes: Routes = [
   { path: 'resource', component: ResourceComponent },
   { path: 'map', component: MapComponent },
   { path: 'volunteer', component: VolunteerComponent },
+  { path: '', redirectTo: '/resources', pathMatch: 'full' }, // Default route
+  { path: '**', redirectTo: '/resources' } 
 ];
 
 @NgModule({
